@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+html {
+  font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Main Styling */
+
+  body {
+    font-family: "Roboto", sans-serif;
+    background:whitesmoke;
+    line-height: 1.5;
+  }
+  
+  .wrapper {
+    max-width: 790px;
+    margin: 0 auto;
+    padding: 0 1rem; 
+  }
+
+  header {
+    background-color: #234;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  header p {
+    text-align: center;
+  }
+  
+  main {
+    padding: 1.25rem 1rem;
+  }
+  
+  .container {
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .container p {
+    text-align: center;
+  }
+
+  #divider {
+    text-align: center;
+    border-bottom: 7px double rgba(83, 86, 87, 0.726);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    width: 100%
+  }
+
+  .h2ptext {
+    color: #9f9f9f;
+  }
+
+  #border2 {
+    border-top: 3px solid rgba(83, 86, 87, 0.405);
+    padding-bottom: 0;
+    width: 100%
+  }
+  
+  form {
+    background-color: white;
+    width: 100%;
+    margin: 0.625rem auto;
+    padding: 0.625rem;
+  }
+  
+  fieldset {
+    border: 0;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  footer {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  legend {
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+    padding-top: 1rem;
+    padding-bottom: .9rem;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  select {
+    background: #e8eeef;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 17px;
+    width: 100%;
+    color: #99acba;
+    margin-bottom: 1.25rem;
+    border-radius: 8px;
+    display: flex;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus,
+  select:focus {
+    background-color: rgb(229, 252, 255);
+  }
+  
+  input::placeholder {
+    text-align: right;
+    font-style: italic;
+  }
+  
+  #name::placeholder,
+  #email::placeholder {
+    color: rgb(136, 136, 136);
+  }
+
+  .newsletter legend {
+    font-weight: bold;
+    margin-bottom: .5rem; 
+  }
+
+  #feedback {
+    margin-top: 1rem;
+}
+  
+  button {
+    padding: 1.18rem 2.43rem 1.12rem 2.43rem;
+    color: #FFF;
+    background-color: #0da5a0;
+    font-size: 1rem;
+    text-align: center;
+    font-style: normal;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+  }
+
+  footer p {
+    color: #99acba;
+    margin-top: 0;
+    padding-bottom: 2rem;
+  }
+  
+  /* Media Queries */
+  @media (min-width: 768px) {
+    .container {
+      max-width: 790px;
+      margin: auto;
+    }
+  
+    .info {
+      display: flex;
+    }
+  
+    .info label {
+      flex: 1;
+      margin-right: 1rem; 
+      vertical-align: middle;
+      padding: 1rem;
+    }
+  
+    .info input[type="text"],
+    .info input[type="email"],
+    .info input[type="tel"],
+    .info select,
+    .info textarea {
+      flex: 4; 
+    }
+
+  }
