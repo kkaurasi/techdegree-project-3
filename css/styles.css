@@ -23,7 +23,7 @@ html {
   }
 
   header {
-    background-color: #234;
+    background-color: #52bab3;
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -50,7 +50,7 @@ html {
 
   #divider {
     text-align: center;
-    border-bottom: 7px double rgba(83, 86, 87, 0.726);
+    border-bottom: 7px double rgb(255, 170, 0);
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     width: 100%
@@ -61,7 +61,7 @@ html {
   }
 
   #border2 {
-    border-top: 3px solid rgba(83, 86, 87, 0.405);
+    border-top: 3px solid rgb(255, 170, 0);
     padding-bottom: 0;
     width: 100%
   }
@@ -102,7 +102,7 @@ html {
   input[type="tel"],
   textarea,
   select {
-    background: #e8eeef;
+    background: #e6e9ed;
     border: 2px solid transparent;
     font-size: 1rem;
     height: auto;
@@ -110,7 +110,7 @@ html {
     outline: 0;
     padding: 17px;
     width: 100%;
-    color: #99acba;
+    color: #000000;
     margin-bottom: 1.25rem;
     border-radius: 8px;
     display: flex;
@@ -121,7 +121,15 @@ html {
   input[type="tel"]:focus,
   textarea:focus,
   select:focus {
-    background-color: rgb(229, 252, 255);
+    background-color: rgba(255, 170, 0, 0.233);
+  }
+
+  input[type="checkbox"]:checked + label {
+    font-weight: bold;
+  }
+
+  input[type="radio"]:checked + label {
+    font-weight: bold;
   }
   
   input::placeholder {
@@ -146,7 +154,7 @@ html {
   button {
     padding: 1.18rem 2.43rem 1.12rem 2.43rem;
     color: #FFF;
-    background-color: #0da5a0;
+    background-color: #52bab3;
     font-size: 1rem;
     text-align: center;
     font-style: normal;
@@ -157,10 +165,19 @@ html {
     outline: none;
   }
 
+  button:hover {
+    opacity: .95;
+    background-color: rgb(255, 170, 0);
+  }
+
   footer p {
     color: #99acba;
     margin-top: 0;
     padding-bottom: 2rem;
+  }
+
+  #html, #css, #javascript, #html_format, #plain {
+    margin-right: 10px;
   }
   
   /* Media Queries */
@@ -190,3 +207,5 @@ html {
     }
 
   }
+
+  

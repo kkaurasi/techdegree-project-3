@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Newsletter Form</title>
         <link rel="stylesheet" href="css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
         
     </head> 
     <body>
@@ -16,9 +16,8 @@
         <div class="wrapper">
         <section class="container">
             <h2>Signup for our newsletter</h2>
-            <p class="h2ptext" id="divider">Get the latest news on how your code is doing right in your inbox</p>
+            <p class="h2ptext" id="divider">Get the latest news on how your code is doing right in your inbox.</p>
         </section>
-        
         <form action="index.html" method="post">
         <fieldset>    
         <legend>Contact Information</legend>
@@ -110,20 +109,19 @@
             <input type="checkbox" id="css" value="css_news" name="user_interest"><label for="css">CSS News</label><br>
             <input type="checkbox" id="javascript" value="javascript" name="user_interest"><label for="javascript">Javascript News</label><br>
         <p>Newsletter Format</p>
-            <input type="radio" id="html" value="html_format" name="format"><label for="html">HTML</label><br>
-            <input type="radio" id="plain" value="plain_text" name="format"><label for="html">Plain text</label><br>
+            <input type="radio" id="html_format" value="html_format" name="format"><label for="html_format">HTML</label><br>
+            <input type="radio" id="plain" value="plain_text" name="format"><label for="plain">Plain text</label><br>
     </fieldset>
     <fieldset>
         <label for="feedback">Other topics you'd like to hear about</label>
             <textarea id="feedback" name="user_feedback" placeholder="Your feedback is important to us"></textarea>
     </fieldset>
         <button type="submit">Sign Up</button>
-</form>
-    </main>
-
+    </form>
+</div>
+</main>
     <footer>
         <p><em>Copyright The Code Review</em></p>
     </footer>
-</div>
     </body>
 </html>
