@@ -114,6 +114,7 @@ html {
     margin-bottom: 1.25rem;
     border-radius: 8px;
     display: flex;
+    transition: background-color 0.3s ease, border-color 0.3s ease;  
   }
   
   input[type="text"]:focus,
@@ -179,33 +180,41 @@ html {
   #html, #css, #javascript, #html_format, #plain {
     margin-right: 10px;
   }
-  
-  /* Media Queries */
-  @media (min-width: 768px) {
-    .container {
-      max-width: 790px;
-      margin: auto;
-    }
-  
-    .info {
-      display: flex;
-    }
-  
-    .info label {
-      flex: 1;
-      margin-right: 1rem; 
-      vertical-align: middle;
-      padding: 1rem;
-    }
-  
-    .info input[type="text"],
-    .info input[type="email"],
-    .info input[type="tel"],
-    .info select,
-    .info textarea {
-      flex: 4; 
-    }
 
+  #info-zip {
+    width: 50%;
+}
+  
+@media (min-width: 768px) {
+  .container {
+    max-width: 790px;
+    margin: auto;
   }
 
-  
+  .info {
+    display: flex;
+    align-items: center;
+  }
+
+  .info label {
+    flex: 1;
+    margin-right: 1rem;
+    vertical-align: middle;
+    padding: 1rem;
+    white-space: nowrap;
+  }
+
+  .info input[type="text"],
+  .info input[type="email"],
+  .info input[type="tel"],
+  .info select,
+  .info textarea {
+      flex: 4;
+  }
+
+  #info-zip input {
+    flex: 1.15;
+    width: 25%;
+    margin-left: 0;
+  }
+}
